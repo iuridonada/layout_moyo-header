@@ -1,79 +1,70 @@
-:root {
-    --blue-color: #007bff;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+:root {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+
+  --color: #00acdc;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 40px;
+  /* background-color: lightgreen; width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  box-sizing: border-box;
 }
 
-.header__logo-link {
-    display: flex;
-    align-items: center;
-    height: 80px;
+.logo_img {
+  /* margin-left: 50px; */
+  width: 40px;
+  margin-top: 3px;
 }
 
-.header__logo {
-    width: 100px;
-    height: 28px; 
-    display: block;
+.nav_list {
+  /* margin: 0 30px;   background-color: greenyellow; align-items: center; */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
 }
 
-.header__nav-list {
-    display: flex;
-    list-style: none;
+.nav_link {
+  /* height: 37px; */
+  position: relative;
+  height: 60px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
-.header__nav-item {
-    margin-left: 40px;
+.nav_link:hover {
+  color: var(--color);
+  transition: 0.3s ease;
 }
 
-.header__nav-item:first-child {
-    margin-left: 0;
+.nav_item:not(:last-child) {
+  margin-right: 20px;
 }
 
-.header__nav-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80px;
-    padding: 0 0;
-    color: #000;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 1; 
-    text-transform: uppercase;
-    position: relative;
-    transition: color 0.3s ease;
+.nav_link.is-active {
+  color: var(--color);
+  position: relative;
 }
 
-.header__nav-link:hover {
-    color: var(--blue-color);
-}
-
-.header__nav-link.is-active {
-    color: var(--blue-color);
-}
-
-.header__nav-link.is-active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--blue-color);
+.nav_link.is-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 2px;
+  height: 4px;
+  background: var(--color);
 }
