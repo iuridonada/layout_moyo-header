@@ -1,5 +1,3 @@
-❗️ Replace `<your_account>` with your GitHub username and copy the links to the `Pull Request` description:
-
 - [DEMO LINK](https://iuridonada.github.io/layout_moyo-header/)
 - [TEST REPORT LINK](https://iuridonada.github.io/layout_moyo-header/report/html_report/)
 
