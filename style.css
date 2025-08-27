@@ -30,15 +30,16 @@ img {
   display: flex;
 }
 .nav__item {
- font-family: Roboto;
+margin: 138px 15px;
+font-family: Roboto;
 font-weight: 500;
 font-size: 12px;
 line-height: 100%;
 text-transform: uppercase;
-  color: black;
-  cursor: pointer;
-  position: relative;
-  text-decoration: none;
+color: black;
+cursor: pointer;
+position: relative;
+text-decoration: none;
 }
 
 .nav__item.is-active {
